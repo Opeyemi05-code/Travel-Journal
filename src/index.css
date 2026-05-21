@@ -1,0 +1,135 @@
+
+
+/* Container article styling */
+article {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 2rem;
+  margin: 2.5% 0;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e2e2;
+  font-family: Inter, sans-serif;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+/* Image container with shadow and rounded corners */
+.main-image-container {
+  width: 320px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.2);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  background-color: #fff;
+}
+
+/* Image inside container */
+.main-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom image slightly on hover */
+.main-image-container:hover .main-image {
+  transform: scale(1.05);
+}
+
+/* Entry details container */
+.entry-details {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333333;
+}
+
+/* Location section with icon and text */
+.entry-location {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  color: #f15b2a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Small location icon */
+.location-logo {
+  width: 18px;
+  height: 18px;
+}
+
+/* Google Maps link */
+.entry-location a {
+  color: #5555ff;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-left: auto;
+  transition: color 0.3s ease;
+}
+
+.entry-location a:hover {
+  color: #2222cc;
+  text-decoration: underline;
+}
+
+/* Titles */
+.entry-details h1 {
+  font-size: 1.6rem;
+  margin: 0.15rem 0 0.3rem 0;
+  color: #2e2e2e;
+}
+
+.entry-details h2 {
+  font-size: 1rem;
+  color: #777777;
+  margin: 0 0 1rem 0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Description paragraph */
+.entry-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.header {
+  font-family: "Inter", sans-serif;
+  /* width: 60%; */
+  height: 80px;
+  margin: 0 auto;
+  background-color: rgba(235, 78, 34, 0.893);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed; /* Fixes header to viewport */
+  top: 0; /* At the very top */
+  left: 0; /* Full width from left */
+  width: 100%; /* Full width of viewport */
+  z-index: 9999; /* Above other content */
+}
+
+.header img {
+  height: 50px;
+}
+
+.header h3 {
+  color: whitesmoke;
+  margin-left: 10px;
+}
